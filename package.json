@@ -6,7 +6,7 @@
   "author": "Ceck <andrea.cecovig@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "browserify -p tinyify src/mobileGame.js -o dist/mobileGameBundle.js"
+    "build": "browserify src/mobileGame.js -o dist/mobileGameBundle.js"
   },
   "dependencies": {
     "ethers": "^5.5.4"
