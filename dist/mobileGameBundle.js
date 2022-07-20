@@ -33310,7 +33310,7 @@ async function signMessage(message)
         await new Promise((resolve) => setTimeout(resolve, 1000));
         const signature = await signer.signMessage(message);
         console.log({ signature });
-        window.location.replace("unitydl://pepoparadise?"+signature);
+        window.location.replace("pepodl://sign?"+signature);
     }
     catch (error)
     {
