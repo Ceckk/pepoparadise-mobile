@@ -33318,7 +33318,7 @@ async function signMessage(message)
         }
         else if (os == "iOS")
         {
-            window.location.replace(window.location.href + "pepodl?" + signature);
+            window.location.replace(window.location.href + "pepodl/" + signature);
         }
         else
         {
