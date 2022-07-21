@@ -1,0 +1,23 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "J25VC3BG8L.com.FinifuguGames.apple.PepoParadise" ],
+             "components": [
+               {
+                  "#": "no_universal_links",
+                  "exclude": true,
+                  "comment": "Matches any URL whose fragment equals no_universal_links and instructs the system not to open it as a universal link"
+               },
+               {
+                  "/": "/pepodl",
+                  "comment": "Matches any URL whose path starts with /pepodl"
+               }
+             ]
+           }
+       ]
+   },
+   "webcredentials": {
+      "apps": [ "J25VC3BG8L.com.FinifuguGames.apple.PepoParadise" ]
+   }
+}
