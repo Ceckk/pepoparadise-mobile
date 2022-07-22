@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", loadApp());
 
 async function loadApp()
 {
-    provider = new ethers.providers.Web3Provider(window.ethereum, "any");
-    signer = provider.getSigner();
-    if (!signer) window.location.reload();
-    await provider.send("eth_requestAccounts", []);
+    // provider = new ethers.providers.Web3Provider(window.ethereum, "any");
+    // signer = provider.getSigner();
+    // if (!signer) window.location.reload();
+    // await provider.send("eth_requestAccounts", []);
     processAction();
 }
 
@@ -76,8 +76,8 @@ async function signMessage(message)
 {
     try
     {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        const signature = await signer.signMessage(message);
+        // await new Promise((resolve) => setTimeout(resolve, 1000));
+        const signature = "asdfg"; //await signer.signMessage(message);
         console.log({ signature });
 
         const os = getMobileOperatingSystem();
@@ -87,7 +87,7 @@ async function signMessage(message)
         }
         else if (os == "iOS")
         {
-            window.location.replace(window.location.href + "pepodl/" + signature);
+            window.location.replace(window.location.origin + "/pepodl/" + signature);
         }
         else
         {
